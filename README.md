@@ -1,9 +1,19 @@
-# 🎃 🎯   HacktoberFest 2021  🎃🎯 
-# Star & fork this Repo first
-![Hacktoberfest 2021](hacktober.jpg)
-## All valid PRs will be merged or suitable tags like hacktober-accepted will be given 
+# 🎃 🎯   Technocrats@HacktoberFest 2021  🎃🎯 
+Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
+Contribute -> Learn -> Earn goodies xD
 
-Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+<img src="./hactoberfest.png">
+
+
+This Repository is accepting : 
+
+    🥇 Flutter (Android/Web) Templates / Components
+    🥈 Any Amazing piece of code in Python🐍 : 
+            (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
+  
+ (No Competitive Programming Code/Normal DSA please)
+ 
+## All valid PRs will be merged or suitable tags like hacktober-accepted will be given 
 
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
@@ -18,12 +28,6 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 
 ## How to contribute to this project :D 
 
-This Repository is accepting : 
-
-    🥇 Coooooool React Templates / Components
-    🥈 Flutter Android Templates / Components
-    🥉 Any Amazing piece of code in Python🐍 (No Competitive Programming Code please)
-  
 
 ## Getting started
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
@@ -57,17 +61,18 @@ git push origin branch-name
 ```
 project
 │   README.md
-│   file001.txt    
+│   hacktoberfest.png
 │
-└───folder1
+└───flutter
 │   └───subfolder1(your name + github id( optional ))
-│       │   file111.cpp
-│       │   file112.js
+│       │   file111.dart
+│       │   file112.dart
 │       │   ...
 │   
-└───folder2
+└───Python
+│   └───subfolder1(your name + github id( optional ))
+│       │   file111.py
+│       │   file112.py
+│       │   ...
+    
 ```
-
-
-
-# Star this Repo first
