@@ -1,7 +1,8 @@
 # 🎃 🎯   Technocrats@HacktoberFest 2021  🎃🎯 
 Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
-![Hacktoberfest 2021](hacktoberfest.png)
 
+
+<img src="./hactoberfest.png">
 
 
 This Repository is accepting : 
