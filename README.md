@@ -1,6 +1,8 @@
 # 🎃 🎯   Technocrats@HacktoberFest 2021   💻 🙆
-Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
+Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest (55k Limited edition Tees on the stake by DigitalOcean Inc. ! 
+
 Contribute -> Learn -> Earn goodies xD
+
 This Repo is for Flutter and Python Developers ! JS & Web developers visit 
 
 <img src="./hactoberfest.png">
@@ -28,7 +30,13 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
 ## How to contribute to this project :D 
-
+    
+    1) Fork and Clone this repo using $git
+    2) Do ... changes
+    3) Commit and push to your forked version !
+    4) Github will tell that "your branch is ahead of original repo . Do you wanna make a pull request ?" Go for it
+    5) After making pull request , go to "Issues" tab of repository and create new issue , body of which contains what you have done and a request to assign it to you.
+    6) After verification of your Pull Request (PR) we'll close the issue .
 
 ## Getting started
 * Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
