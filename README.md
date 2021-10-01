@@ -5,16 +5,19 @@ Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake b
 
 <img src="./hactoberfest.png">
 
-This Repository is accepting : 
-
-    🥈 The Working Code Snippets for several functionalities in languages/tech stacks given below:
+This Repository is accepting the Working Code Snippets for several functionalities in languages/tech stacks given below:
+    
     🥇 Flutter (Android/Web) Templates / Components
+    
     🥈 Any Amazing piece of code in Python🐍 : 
             (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
             (Neural Networks Archs-codes/Demonstration guide of new packages are heartly welcome !)
+            
     🥉 DataStructure and Coding Algorithms
+    
     🥇 React UI Components , NodeJS Magic Snippets 
-    🥈 User Interfaces built out of HTML, CSS , JS , Bootstrap standalone
+    
+    🥈 User Interfaces built on top of HTML, CSS , JS , Bootstrap standalone
        
  
 Note : While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! 
@@ -76,13 +79,13 @@ project
 │   hacktoberfest.png
 │
 └───flutter
-│   └───subfolder1(your name + github id( optional ))
+│   └───subfolder1(FolderTopic+Yourname+username)
 │       │   file001.dart
 │       │   file002.dart
 │       │   ...
 │   
 └───Python
-│   └───subfolder1(your name + github id( optional ))
+│   └───subfolder1(FolderTopic+Yourname+username)
 │       │   file001.py
 │       │   file002.py
 │       │   ...
