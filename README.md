@@ -1,6 +1,7 @@
 # 🎃 🎯   Technocrats@HacktoberFest 2021  🎃🎯 
 Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
 Contribute -> Learn -> Earn goodies xD
+This Repo is for Flutter and Python Developers ! JS & Web developers visit 
 
 <img src="./hactoberfest.png">
 
@@ -10,7 +11,7 @@ This Repository is accepting :
     🥇 Flutter (Android/Web) Templates / Components
     🥈 Any Amazing piece of code in Python🐍 : 
             (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
-  
+            (Neural Networks Archs-codes/Demonstration guide of new packages are heartly welcome !)
  (No Competitive Programming Code/Normal DSA please)
  
 ## All valid PRs will be merged or suitable tags like hacktober-accepted will be given 
