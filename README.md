@@ -3,10 +3,7 @@ Team Technocrats (NITW) is accepting your contributions under the hood of Hackto
 
 Contribute -> Learn -> Earn goodies xD
 
-This Repo is for Flutter and Python Developers ! JS & Web developers visit 
-
 <img src="./hactoberfest.png">
-
 
 This Repository is accepting : 
 
