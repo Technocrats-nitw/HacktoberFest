@@ -120,4 +120,9 @@ Team Technocrats is a team of 6 tech enthusiast students with varying technical 
    [Aaditya prakash kattekola](https://github.com/Kapi2910)
 
 
+<hr>
 
+## Contributors
+<a href="https://github.com/shivanshuman021/Technocrats-HacktoberFest/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=shivanshuman021/Technocrats-HacktoberFest" />
+</a>
