@@ -76,13 +76,13 @@ project
 │   hacktoberfest.png
 │
 └───flutter
-│   └───subfolder1(your name + github id( optional ))
+│   └───subfolder1(folder name)
 │       │   file001.dart
 │       │   file002.dart
 │       │   ...
 │   
 └───Python
-│   └───subfolder1(your name + github id( optional ))
+│   └───subfolder1(folder name)
 │       │   file001.py
 │       │   file002.py
 │       │   ...
