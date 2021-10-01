@@ -3,6 +3,9 @@
     Time complexity : O(E Log V))
 */
 
+/*
+    Given an undirected, connected and weighted graph, find Minimum Spanning Tree (MST) of the graph using Prim’s algorithm.
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
