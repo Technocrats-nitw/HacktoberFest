@@ -77,6 +77,15 @@ git push origin branch-name
 * Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
 * Wait for your PR review and merge approval!
 
+## Updating your repository
+If you get this message __'This branch is ___ commits behind shivanshuman021:main.',__ follow below steps:
+
+* Click on __Fetch Upstream -> Fetch and merge__
+* Open up terminal on your local machine and run this cmd.
+```markdown
+git pull origin branch-name
+```
+
 # Add sub-folders of your name and put files into respective sub-folders
 #### Example - >
 ```
