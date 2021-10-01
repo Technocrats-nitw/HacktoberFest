@@ -5,7 +5,7 @@ This repository is mainly for storing Data Structures and definitions.
 Guidelines
 
 - Make a folder, if already not there for your selected topic.
-- Add your code
+- Add your code in respective folder only
 - Make sure
   - Problem Statement should be there at top commented
   - Language MUST be C++ or C
