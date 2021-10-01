@@ -17,6 +17,8 @@ This Repository is accepting :
     🥈 User Interfaces built out of HTML, CSS , JS , Bootstrap standalone
        
  
+Note : While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! 
+ 
 ## All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
 
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
