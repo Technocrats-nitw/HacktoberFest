@@ -1,3 +1,13 @@
+from django.contrib.auth import logout as django_logout
+from rest_framework.permissions import IsAuthenticated
+from django.core.exceptions import ObjectDoesNotExist
+from rest_framework import generics
+from rest_framework.generics import *
+from rest_framework import status
+from rest_framework import response
+from rest_framework.views import APIView
+from django.conf import settings
+
 class LogoutView(APIView):
     permission_classes = (IsAuthenticated,)
 
