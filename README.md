@@ -1,7 +1,7 @@
 # 🎃 🎯   Technocrats@HacktoberFest 2021   💻 🙆
-Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest (55k Limited edition Tees on the stake by DigitalOcean Inc. ! 
+Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
 
-Contribute -> Learn -> Earn goodies xD
+Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake by DigitalOcean Inc.)
 
 <img src="./hactoberfest.png">
 
@@ -11,9 +11,12 @@ This Repository is accepting :
     🥈 Any Amazing piece of code in Python🐍 : 
             (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
             (Neural Networks Archs-codes/Demonstration guide of new packages are heartly welcome !)
- (No Competitive Programming Code/Normal DSA please)
+    🥉 Advanced DataStructure and Algorithms
+    🥇 React UI Components , NodeJS Magic Snippets 
+    🥈 User Interfaces built out of HTML, CSS , JS , Bootstrap standalone
+       
  
-## All valid PRs will be merged or suitable tags like hacktober-accepted will be given 
+## All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
 
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
@@ -29,7 +32,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 ## How to contribute to this project :D 
     
     1) Fork and Clone this repo using $git
-    2) Do ... changes
+    2) Do ... changes (follow Getting Started Steps)
     3) Commit and push to your forked version !
     4) Github will tell that "your branch is ahead of original repo . Do you wanna make a pull request ?" Go for it
     5) After making pull request , go to "Issues" tab of repository and create new issue , body of which contains what you have done and a request to assign it to you.
@@ -80,7 +83,11 @@ project
 │       │   file111.py
 │       │   file112.py
 │       │   ...
-    
+|
+.
+.
+.
+ 
 ```
 
 
