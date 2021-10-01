@@ -24,6 +24,8 @@ Note : While we accept data structures and algorithms codes (just like other rep
  
 ## All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
 
+## Keep patience we will try to cover as many PRs and reduce possible delays
+
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
 This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
