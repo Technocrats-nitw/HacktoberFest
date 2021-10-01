@@ -61,31 +61,60 @@ int main()
        adj[a].push_back({b,wt});adj[b].push_back({a,wt});
    }
 
-
+    // Create a priority queue to store vertices that
+    // are being preinMST.
    priority_queue<pair<int,int>,vector<pair<int,int>>,greater<pair<int,int>> >Q;
+    
+    // Create a vector for keys and initialize all
+    // keys as infinite (INF)
    vector<int>key(n,INT_MAX);
+     // To store parent array which in turn store MST
    vector<int>parent(n,-1);
+    
+    // To keep track of vertices included in MST
    vector<bool>inMST(n,0);
 
    key[source]=0;
+    
+ 
+    // Insert source itself in priority queue and initialize
+    // its key as 0.
    Q.push({0,source});
 
    while(!Q.empty()){
-       int u=Q.top().second;Q.pop();
-       if(inMST[u]) continue;
+        // The first vertex in pair is the minimum key
+        // vertex, extract it from priority queue.
+        // vertex label is stored in second of pair (it
+        // has to be done this way to keep the vertices
+        // sorted key (key must be first item
+        // in pair)
+         int u=Q.top().second;Q.pop();
+       
+        //Different key values for same vertex may exist in the priority queue.
+        //The one with the least key value is always processed first.
+        //Therefore, ignore the rest.
+            if(inMST[u]) continue;
 
-       inMST[u]=1;
+         inMST[u]=1; // Include vertex in MST
 
-       for(auto it:adj[u]){
-           int v=it.first;
-           int weight=it.second;
-           if(!inMST[v] && key[v]>weight){
-               key[v]=weight;
-               parent[v]=u;
-               Q.push({key[v],v});
+           for(auto it:adj[u]){
+               // Get vertex label and weight of current adjacent
+               // of u.
+               int v=it.first;
+               int weight=it.second;
+               
+             //  If v is not in MST and weight of (u,v) is smaller
+              // than current key of v
+               if(!inMST[v] && key[v]>weight){
+                   // Updating key of v
+                   key[v]=weight;
+                   parent[v]=u;
+                   Q.push({key[v],v});
+               }
            }
-       }
    }
+    
+    // Print edges of MST using parent array
    for(i=0;i<n;i++) if(i!=source) cout<<parent[i]<<" "<<i<<"\n";
     return 0;
 }
