@@ -7,11 +7,12 @@ Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake b
 
 This Repository is accepting : 
 
+    🥈 The Working Code Snippets for several functionalities in languages/tech stacks given below:
     🥇 Flutter (Android/Web) Templates / Components
     🥈 Any Amazing piece of code in Python🐍 : 
             (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
             (Neural Networks Archs-codes/Demonstration guide of new packages are heartly welcome !)
-    🥉 Advanced DataStructure and Algorithms
+    🥉 DataStructure and Coding Algorithms
     🥇 React UI Components , NodeJS Magic Snippets 
     🥈 User Interfaces built out of HTML, CSS , JS , Bootstrap standalone
        
@@ -74,14 +75,14 @@ project
 │
 └───flutter
 │   └───subfolder1(your name + github id( optional ))
-│       │   file111.dart
-│       │   file112.dart
+│       │   file001.dart
+│       │   file002.dart
 │       │   ...
 │   
 └───Python
 │   └───subfolder1(your name + github id( optional ))
-│       │   file111.py
-│       │   file112.py
+│       │   file001.py
+│       │   file002.py
 │       │   ...
 |
 .
