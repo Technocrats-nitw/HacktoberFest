@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fast-api-login"
+version = "0.1.0"
+description = ""
+authors = ["Harsh Navdhare <navdhareharsh2001@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "0.13.4"
+motor = "2.5.1"
+pydantic = "1.8.2"
+fastapi = "0.68.1"
+fastapi-users = "8.1.0"
+fastapi-users-db-mongodb = "1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

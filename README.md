@@ -3,6 +3,7 @@ Team Technocrats (NITW) is accepting your contributions under the hood of Hackto
 
 Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake by DigitalOcean Inc.)
 
+
 <img src="./hactoberfest.png">
 
 This Repository is accepting the Working Code Snippets for several functionalities in languages/tech stacks given below:
@@ -19,7 +20,9 @@ This Repository is accepting the Working Code Snippets for several functionaliti
     
     🥈 User Interfaces built on top of HTML, CSS , JS , Bootstrap standalone
        
- 
+
+### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
+
 Note : While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! 
  
 ## All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
@@ -69,8 +72,6 @@ git commit -m 'Commit message'
 git push origin branch-name
 ```
 
-### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
-
 
 * __Star this repository__ 
 * Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
@@ -119,4 +120,9 @@ Team Technocrats is a team of 6 tech enthusiast students with varying technical 
    [Aaditya prakash kattekola](https://github.com/Kapi2910)
 
 
+<hr>
 
+## Contributors
+<a href="https://github.com/shivanshuman021/Technocrats-HacktoberFest/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=shivanshuman021/Technocrats-HacktoberFest" />
+</a>
