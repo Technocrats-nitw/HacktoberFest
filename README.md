@@ -61,15 +61,18 @@ git push origin branch-name
 ```
 project
 │   README.md
-│   file001.txt    
+│   hacktoberfest.png
 │
-└───folder1
+└───flutter
 │   └───subfolder1(your name + github id( optional ))
-│       │   file111.cpp
-│       │   file112.js
+│       │   file111.dart
+│       │   file112.dart
 │       │   ...
 │   
-└───folder2
+└───Python
+│   └───subfolder1(your name + github id( optional ))
+│       │   file111.py
+│       │   file112.py
+│       │   ...
+    
 ```
-
-
