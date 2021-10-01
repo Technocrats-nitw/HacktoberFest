@@ -1,0 +1,6 @@
+uvicorn==0.13.4
+motor==2.5.1
+pydantic==1.8.2
+fastapi==0.68.1
+fastapi_users==8.1.0
+fastapi_users_db_mongodb==1.0.0
