@@ -1,4 +1,4 @@
-// C code for FCFS algorithm
+/// C code for FCFS algorithm
 #include <stdio.h>
 
 void swap(int *x, int *y)
