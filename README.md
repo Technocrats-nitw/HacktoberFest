@@ -77,3 +77,18 @@ project
 │       │   ...
     
 ```
+
+
+# About us
+
+Team Technocrats is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not limited to Hackathons xD . We have nerdiest researchers over here too :D
+
+       ![Anshuman Mishra] : yeyyy it's me
+       ![Sufiyan Ansari](https://github.com/suffisme)
+       ![Ashiqa Rahaman](https://github.com/ashiqa)
+       ![Chaitanya Hardikar](https://github.com/chaitanyahardikar)
+       ![Shaik Abdullah](https://github.com/Shaik2003)
+       ![Aaditya prakash kattekola](https://github.com/Kapi2910)
+
+
+
