@@ -1,3 +1,36 @@
+/*
+
+ dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  curved_navigation_bar: ^1.0.1
+  cloud_firestore: ^0.12.9+5
+  firebase_core: ^0.4.0+9
+  firebase_auth: ^0.14.0+5
+  firebase_analytics: ^5.0.2
+  cached_network_image: ^3.1.0
+  modal_progress_hud: ^0.1.3
+  animated_splash_screen: ^1.1.0
+  google_fonts: ^2.1.0
+  flutter_launcher_icons: ^0.9.2
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+*/
+
 import 'package:blogesta/constant.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_auth/firebase_auth.dart';
@@ -80,7 +113,7 @@ class _SignUpState extends State<SignUp> {
                       elevation: 2,
                       shadowColor: Colors.grey[100],
                       child: TextFormField(
-                    //    key: formKey,
+                        //    key: formKey,
                         validator: (val) {
                           if (val.isEmpty)
                             return "This feild can be empty";
@@ -115,7 +148,7 @@ class _SignUpState extends State<SignUp> {
                       elevation: 2,
                       shadowColor: Colors.grey[100],
                       child: TextFormField(
-                      //  key: formKey,
+                        //  key: formKey,
                         validator: (val) {
                           return RegExp(
                                       r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
@@ -150,7 +183,7 @@ class _SignUpState extends State<SignUp> {
                       elevation: 2,
                       shadowColor: Colors.grey[100],
                       child: TextFormField(
-                  //      key: formKey,
+                        //      key: formKey,
                         validator: (val) {
                           return val.length > 6
                               ? null
@@ -184,7 +217,7 @@ class _SignUpState extends State<SignUp> {
                       elevation: 2,
                       shadowColor: Colors.grey[100],
                       child: TextFormField(
-                   //     key: formKey,
+                        //     key: formKey,
                         validator: (val) {
                           if (val.length > 5 && val == _pasController.text)
                             return null;
@@ -225,33 +258,31 @@ class _SignUpState extends State<SignUp> {
                     child: ElevatedButton(
                       style: btnStyle,
                       onPressed: () async {
-                      //  if (formKey1.currentState.validate()) {
+                        //  if (formKey1.currentState.validate()) {
                         setState(() {
-                              isSpin = true;
-                            });
-                          try {
-                            
+                          isSpin = true;
+                        });
+                        try {
+                          bool result = await registerUser(
+                              _nameController.text.toString().trim(),
+                              _emailController.text.toString().trim(),
+                              _pasController.text.toString().trim(),
+                              _repasController.text.toString().trim());
 
-                            bool result = await registerUser(
-                                _nameController.text.toString().trim(),
-                                _emailController.text.toString().trim(),
-                                _pasController.text.toString().trim(),
-                                _repasController.text.toString().trim());
-
-                            if (result) {
-                              Navigator.pushNamed(context, '/home', arguments: {
-                                "user": _nameController.text,
-                                "email": _emailController.text,
-                              });
-                            } else {
-                              print("error");
-                            }
-                            setState(() {
-                              isSpin = false;
+                          if (result) {
+                            Navigator.pushNamed(context, '/home', arguments: {
+                              "user": _nameController.text,
+                              "email": _emailController.text,
                             });
-                          } catch (e) {
-                            print(e);
-                    //      }
+                          } else {
+                            print("error");
+                          }
+                          setState(() {
+                            isSpin = false;
+                          });
+                        } catch (e) {
+                          print(e);
+                          //      }
                         }
                       },
                       child: Text(
