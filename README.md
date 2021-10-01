@@ -1,4 +1,4 @@
-# 🎃 🎯   Technocrats@HacktoberFest 2021  🎃🎯 
+# 🎃 🎯   Technocrats@HacktoberFest 2021   💻 🙆
 Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
 Contribute -> Learn -> Earn goodies xD
 This Repo is for Flutter and Python Developers ! JS & Web developers visit 
