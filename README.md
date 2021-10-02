@@ -6,6 +6,10 @@
 
 #### `Contribute` -> `Learn` -> `Earn goodies` xD (55k Limited edition Tees on the stake by DigitalOcean Inc.) 
 
+### IMPORTANT NOTICE : We have stopped accepting PRs for DSA
+`Any commits on DSA folder won't be accepted from now on. Hacktoberfest is labelling DSA Repos as spams it seems.`
+
+<hr><hr>
 
 <img src="./hactoberfest.png">
 
