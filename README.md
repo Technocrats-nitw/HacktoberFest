@@ -22,10 +22,14 @@ This Repository is accepting the Working Code Snippets for several functionaliti
     🥇 React UI Components , NodeJS Magic Snippets 
     
     🥈 User Interfaces built on top of HTML, CSS , JS , Bootstrap standalone
+    
+    🥉 Arduino/Verilog/VHDL Magic scripts 
        
 
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing `4 quality PRs` in this project.
+
+`Star`⭐ this repo first
 
 This repository is open to `all members` of the `GitHub community`. Any member may contribute to this project without being a collaborator.
 
