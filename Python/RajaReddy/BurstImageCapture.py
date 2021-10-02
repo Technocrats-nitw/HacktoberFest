@@ -1,4 +1,13 @@
 
+"""
+Created on 02 Oct 21;
+when you want to take burst pics,
+or pics witha adesired interval;
+this program wil help you;
+
+@author:Raja Reddy Pundra
+"""
+
 import cv2
 cam=cv2.VideoCapture(1)
 import time
@@ -17,7 +26,7 @@ while True:
     elif True :
 
         #change the properties 
-        imgName="C:/Users/rajar/Documents/summercoding/ML/to train/face detection/IMAGES/2/captured{}.png".format(img_counter)
+        imgName="$desiredPath/ImageName{}.png".format(img_counter)
         cv2.imwrite(imgName,frame);
         print("{} written!".format(imgName))
         
