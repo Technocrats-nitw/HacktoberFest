@@ -27,6 +27,8 @@ This Repository is accepting the Working Code Snippets for several functionaliti
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing `4 quality PRs` in this project.
 
+`Star`⭐ this repo first
+
 This repository is open to `all members` of the `GitHub community`. Any member may contribute to this project without being a collaborator.
 
 While we accept data structures and algorithms codes (just like other repos) we will give high `appreciation` to Pull Requests involving pure `DEV` fields mentioned above !
