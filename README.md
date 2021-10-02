@@ -2,9 +2,9 @@
     <h1> 🎃 🎯   Technocrats@HacktoberFest 2021   💻 🙆 </h1>
 </center>
 
-Team Technocrats (NITW) is accepting your contributions under the hood of Hacktoberfest ! 
+`Team Technocrats (NITW)` is accepting your contributions under the hood of Hacktoberfest ! 
 
-Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake by DigitalOcean Inc.)
+<b> Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake by DigitalOcean Inc.) </b>
 
 
 <img src="./hactoberfest.png">
