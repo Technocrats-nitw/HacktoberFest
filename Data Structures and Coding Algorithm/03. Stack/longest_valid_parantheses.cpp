@@ -9,39 +9,38 @@ using namespace std;
 
 int longestValidParentheses(string str)
 {
-	int n = str.size();
+	int n = str.size();		//size of the string
 	stack<int> stk;
-	int last = -1;
-	stk.push(-1);
-	int max = 0;
-	for (int i = 0; i < n; i++)
+	stk.push(-1);		//last index till which the expression was balanced
+	int max = 0;		//initialising the max with 0
+	for (int i = 0; i < n; i++)		//iterate the string
 	{
-		if (str[i] == '(')
+		if (str[i] == '(')		//opening paranthesis can be directly pushed into the stack
 		{
 			stk.push(i);
 		}
-		else
+		else		//if it is a closing paranthesis
 		{
-			stk.pop();
-			if (stk.empty())
+			stk.pop();		//pop out an index for starting bracket
+			if (stk.empty())		//empty stack means the corresponding sarting bracket was not present so the expression became inmbalanced
 			{
-				stk.push(i);
+				stk.push(i);		//last index till which the expression was balanced
 			}
-			else
+			else		
 			{
-				if (i - stk.top() > max)
+				if (i - stk.top() > max)		//the brackets are balanced from the top index in the stack to the current index so compare it with the max we have found till now
 				{
 					max = i - stk.top();
 				}
 			}
 		}
 	}
-	return max;
+	return max;		//longest substring found til now
 }
 
 void solve()
 {
-	string s;
+	string s;		//input the paranthesis expression
 	cin >> s;
 	cout << longestValidParentheses(s) << endl;
 }
@@ -49,10 +48,14 @@ void solve()
 int32_t main()
 {
 	int ntc = 1;
-	cin >> ntc;
+	cin >> ntc;		//input no. of testcases
 	while (ntc--)
 	{
 		solve();
 	}
 	return 0;
 }
+
+/*
+Given above is an O(n) solution to the problem
+*/
