@@ -2,9 +2,9 @@
     <h1> 🎃 🎯   Technocrats@HacktoberFest 2021   💻 🙆 </h1>
 </center>
 
-`Team Technocrats (NITW)` is accepting your contributions under the hood of Hacktoberfest ! 
+`Team Technocrats (NITW)` is accepting your contributions under the hood of `Hacktoberfest` ! 
 
-<b> Contribute -> Learn -> Earn goodies xD (55k Limited edition Tees on the stake by DigitalOcean Inc.) </b>
+#### `Contribute` -> `Learn` -> `Earn goodies` xD (55k Limited edition Tees on the stake by DigitalOcean Inc.) 
 
 
 <img src="./hactoberfest.png">
@@ -25,20 +25,15 @@ This Repository is accepting the Working Code Snippets for several functionaliti
        
 
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
-Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
-This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
+Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing `4 quality PRs` in this project.
 
-# Updates & Notifications
+This repository is open to `all members` of the `GitHub community`. Any member may contribute to this project without being a collaborator.
 
-`1 Oct`
+While we accept data structures and algorithms codes (just like other repos) we will give high `appreciation` to Pull Requests involving pure `DEV` fields mentioned above !
 
-<ul>While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! </ul>
+All `valid PRs` will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
 
-<ul>All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest </ul>
-
-`2 Oct`   
-
-<ul>Keep patience we will try to cover as many PRs and reduce possible delays</ul>
+Keep `patience` we will try to cover as many PRs and reduce possible delays
 
 
 
