@@ -9,7 +9,10 @@ musicPlayer.title('Mini Music Player')
 musicPlayer.geometry('600x400')
 
 '''
-ALL THE SONGS IN SONGS FOLDER WILL BE VISIBLE IN PLAYLIST
+ALL THE SONGS IN songs FOLDER WILL BE VISIBLE IN PLAYLIST
+
+SO make a folder named songs in the same directory as this file and then store your songs there.
+This will work
 
 '''
 os.chdir('./songs')
