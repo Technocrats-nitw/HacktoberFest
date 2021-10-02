@@ -4,7 +4,7 @@
 
 `Team Technocrats (NITW)` is accepting your contributions under the hood of Hacktoberfest ! 
 
-<b> Contribute -> Learn -> Earn goodies xD ((55k Limited edition Tees on the stake by DigitalOcean Inc.) </b>
+<b> Contribute -> Learn -> Earn goodies xD (55k Limited edition Tees on the stake by DigitalOcean Inc.) </b>
 
 
 <img src="./hactoberfest.png">
@@ -25,21 +25,27 @@ This Repository is accepting the Working Code Snippets for several functionaliti
        
 
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
-
-Note : While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! 
- 
-## All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest
-
-## Keep patience we will try to cover as many PRs and reduce possible delays
-
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
-
 This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
+
+# Updates
+
+`1 Oct`
+
+<ul>While we accept data structures and algorithms codes (just like other repos) we will give high appreciation to Pull Requests involving pure developement fields mentioned above , and will thereby recommend your PR DigitalOcean for specialmention ! </ul>
+
+<ul>All valid PRs will be merged or suitable tags like hacktober-accepted will be given while spam PRs will be given spam label which will affect your participation in hactoberfest </ul>
+
+`2 Oct`   
+
+<ul>Keep patience we will try to cover as many PRs and reduce possible delays</ul>
+
+
+
 
 
 # Quick FAQ :
-## What is Hacktoberfest?
-A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
+`What is Hacktoberfest?`  :  A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
@@ -117,7 +123,7 @@ project
 
 # About us
 
-Team Technocrats is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not limited to Hackathons xD . We have nerdiest researchers over here too :D
+`Team Technocrats` is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not limited to Hackathons xD . We have nerdiest researchers over here too :D
 
    [Anshuman Mishra](https://github.com/shivanshuman021) : yeyyy it's me
        
