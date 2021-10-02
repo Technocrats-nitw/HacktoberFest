@@ -22,6 +22,8 @@ This Repository is accepting the Working Code Snippets for several functionaliti
     🥇 React UI Components , NodeJS Magic Snippets 
     
     🥈 User Interfaces built on top of HTML, CSS , JS , Bootstrap standalone
+    
+    🥉 Arduino/Verilog/VHDL Magic scripts 
        
 
 ### Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITHUB website
