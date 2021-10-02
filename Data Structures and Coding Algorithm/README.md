@@ -1,5 +1,9 @@
 ## Data Structure
 
+## IMPORTANT NOTICE - WE ARE NOT ACCEPTING PRs in DSA Domain
+
+`Please send your PRs for other domains/folder`
+
 This repository is mainly for storing Data Structures and definitions.
 
 Guidelines
