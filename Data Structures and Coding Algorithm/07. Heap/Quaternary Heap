@@ -1,0 +1,75 @@
+/*
+      Quaternary Heap
+      A quaternary heap is a heap stored with a complete quaternary tree: each node has up to four children and the nodes are filled in a breadth-first traversal order.
+      A binary min-heap: QuaternaryMinHeap
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+typedef struct qtnode
+{
+    int data;
+    struct qtnode *parent=NULL;
+    struct qtnode *cptr[4]={NULL};
+}*qtptr;
+
+
+// function of creating a quaternary heap
+void create_quaternary_heap(qtptr &qt)
+{
+     queue<qtptr>q;  // Initialize a queue 
+     qt=new(qtnode);
+     
+     int n; 
+     // taking input one by one upto -1 and maintain the quaternary heap qt
+     cin>>n;
+     if(n==-1) return;
+     qt->data=n;
+     q.push(qt);
+    while(!q.empty())
+    {
+        qtptr T=q.front();q.pop();
+        for(int i=0;i<4;i++) {
+             cin>>n;
+             if(n==-1) return;
+            T->cptr[i]=new(qtnode);
+            T->cptr[i]->data=n;
+            T->cptr[i]->parent=T;
+            qtptr temp=T->cptr[i];
+
+            while(temp->parent!=NULL && temp->parent->data > temp->data) // using heapify property
+            {
+                swap(temp->parent->data,temp->data);
+                temp=temp->parent;
+            }
+            q.push(T->cptr[i]);
+        }
+    }
+}
+
+// funtion of printing a Quaternary Heap
+void print(qtptr qt)
+{
+    if(qt==NULL) return;
+     queue<qtptr>q; q.push(qt);   
+    while(!q.empty()){
+        int n=q.size(); // size of queue/current level
+        while(n--){
+            qtptr T=q.front();q.pop();
+            cout<<T->data<<" ";
+            for(int i=0;i<4;i++) if(T->cptr[i])   q.push(T->cptr[i]);
+        }
+        cout<<"\n";
+    }
+}
+
+int main()
+{
+    qtptr qt=NULL;
+    create_quaternary_heap(qt); // creating a Quaternary Heap
+    print(qt); // Print a Quaternary Heap
+    return 0;
+}
+
+
