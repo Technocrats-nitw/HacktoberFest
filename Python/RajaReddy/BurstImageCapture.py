@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jul  3 14:08:03 2021
-
-@author: Mr.BeHappy
-"""
 
 import cv2
 cam=cv2.VideoCapture(1)
