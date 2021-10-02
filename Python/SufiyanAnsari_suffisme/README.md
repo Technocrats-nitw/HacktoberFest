@@ -11,4 +11,4 @@
 - Music Player
     - It detects songs stored in songs folder
     - GUI using tkinter
-    - [Player](./MusicPlayer/player.jpg)
+    - <img src="./MusicPlayer/player.jpg">
