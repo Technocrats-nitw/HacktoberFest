@@ -1,3 +1,7 @@
+//code for different traversals in binary tree
+
+
+
 struct node {             //structure of node for binary tree
  <type> data;             //<type> = any data type
  node* left;             //pointer to left child of node with same structure
