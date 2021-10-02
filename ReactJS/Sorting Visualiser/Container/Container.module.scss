@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(50, 1fr);
+  background-color: white;
+  gap: 1px;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    gap: 5px;
+  }
+}
