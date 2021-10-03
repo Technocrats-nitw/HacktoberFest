@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="width: 100%;">
+        <h1>Welcome to my Calculator</h1>
+        <div class="calculatorBody">
+            <input type="text" id="screen"><br>
+            <table class="keys">
+                <tbody>
+                    <tr>
+                        <td><button type="button" onclick="display(1)">1</button></td>
+                        <td><button type="button" onclick="display(2)">2</button></td>
+                        <td><button type="button" onclick="display(3)">3</button></td>
+                        <td><button type="button" onclick="display('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="display(4)">4</button></td>
+                        <td><button type="button" onclick="display(5)">5</button></td>
+                        <td><button type="button" onclick="display(6)">6</button></td>
+                        <td><button type="button" onclick="display('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="display(7)">7</button></td>
+                        <td><button type="button" onclick="display(8)">8</button></td>
+                        <td><button type="button" onclick="display(9)">9</button></td>
+                        <td><button type="button" onclick="display('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="display('.')">.</button></td>
+                        <td><button type="button" onclick="display(0)">0</button></td>
+                        <td><button type="button" onclick="display('C')">C</button></td>
+                        <td><button type="button" onclick="display('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="display('sin(')" style="font-size: large;">sin</button></td>
+                        <td><button type="button" onclick="display('cos(')" style="font-size: large;">cos</button></td>
+                        <td><button type="button" onclick="display('inverse')">1/x</button></td>
+                        <td><button type="button" onclick="changeUnit('deg')" style="font-size: large;">Deg</button></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button" onclick="changeUnit('rad')" style="font-size: large;">Rad</button></td>
+                        <td><button type="button" onclick="display('(')">(</button></td>
+                        <td><button type="button" onclick="display(')')">)</button></td>
+                        <td><button type="button" onclick="display('=')" id="equalsTo">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="calculator.js"></script>
+</body>
+</html>
