@@ -1,0 +1,103 @@
+#container {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  flex-direction: row;
+}
+#circle1 {
+  z-index: 1;
+  height: 215px;
+  width: 215px;
+  border-radius: 50%;
+  background-color: #ff9999;
+  position: absolute;
+  top: 47.5px;
+  left: 47.5px;
+}
+#circle2 {
+  z-index: 2;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+#up {
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+
+  animation: animationLeft 5s linear infinite;
+  animation-play-state: play;
+}
+
+#circle3 {
+  z-index: 1;
+  height: 215px;
+  width: 215px;
+  border-radius: 50%;
+  background-color: #ff9999;
+  position: absolute;
+  top: 245px;
+  left: 47.5px;
+}
+#circle4 {
+  z-index: 2;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 257.5px;
+  left: 60px;
+}
+
+#down {
+  z-index: 3;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 40px;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  animation: animationRight 5s linear infinite;
+  animation-play-state: play;
+}
+
+@keyframes animationLeft {
+  0% {
+    transform: rotate(-270deg) translateX(100px);
+  }
+  50% {
+    transform: rotate(90deg) translateX(100px);
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(-90deg) translateX(100px);
+    visibility: hidden;
+  }
+}
+
+@keyframes animationRight {
+  0% {
+    transform: rotate(-270deg) translateX(100px);
+    visibility: hidden;
+  }
+  50% {
+    transform: rotate(270deg) translateX(100px);
+    visibility: hidden;
+  }
+  100% {
+    transform: rotate(-90deg) translateX(100px);
+  }
+}
