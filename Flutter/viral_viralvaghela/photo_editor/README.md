@@ -1,6 +1,6 @@
 # photo_editor
 
-Photo editor app in flutter. 
+Flutter app to apply filters on photos. 
 ## Getting Started
 
 A few resources to get you started 
