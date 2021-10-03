@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
                                 filters[selectedFilterIndex]),
                             child: Container(
                               child: Image.network(
-                                "https://instagram.famd5-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/175833889_3271788496385531_7401152911304956953_n.jpg?tp=1&_nc_ht=instagram.famd5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=1RiQsQ217mUAX8KLQvv&edm=AP_V10EAAAAA&ccb=7-4&oh=5533d0bb5c4b319cfced4c5f1c6108ca&oe=60A7D124&_nc_sid=4f375e",
+                                "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png",
                                 fit: BoxFit.cover,
                                 height: 400,
                                 width: 400,
@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
                       : ClipRRect(
                           borderRadius: BorderRadius.circular(30),
                           child: Image.network(
-                            "https://instagram.famd5-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/175833889_3271788496385531_7401152911304956953_n.jpg?tp=1&_nc_ht=instagram.famd5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=1RiQsQ217mUAX8KLQvv&edm=AP_V10EAAAAA&ccb=7-4&oh=5533d0bb5c4b319cfced4c5f1c6108ca&oe=60A7D124&_nc_sid=4f375e",
+                            "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png",
                             fit: BoxFit.cover,
                             height: 400,
                             width: 400,
@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
                             child: Container(
                               padding: EdgeInsets.all(5),
                               child: Image.network(
-                                "https://instagram.famd5-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/175833889_3271788496385531_7401152911304956953_n.jpg?tp=1&_nc_ht=instagram.famd5-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=1RiQsQ217mUAX8KLQvv&edm=AP_V10EAAAAA&ccb=7-4&oh=5533d0bb5c4b319cfced4c5f1c6108ca&oe=60A7D124&_nc_sid=4f375e",
+                                "https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png",
                                 fit: BoxFit.cover,
                                 height: 200,
                                 width: 200,
