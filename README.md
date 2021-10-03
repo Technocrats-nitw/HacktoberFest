@@ -6,7 +6,12 @@
 
 #### `Contribute` -> `Learn` -> `Earn goodies` xD (55k Limited edition Tees on the stake by DigitalOcean Inc.) 
 
-### IMPORTANT NOTICE : We have stopped accepting PRs for DSA
+
+
+## IMPORTANT NOTICE : We have `stopped` accepting PRs for `DSA`
+
+
+
 `Any commits on DSA folder won't be accepted from now on. Hacktoberfest is labelling DSA Repos as spam, it seems.`
 
 <hr><hr>
@@ -20,8 +25,6 @@ This Repository is accepting the Working Code Snippets for several functionaliti
     🥈 Any Amazing piece of code in Python🐍 : 
             (Decorators/packages/Amazing snippets realted to Machine Learning/ Data Science/Backend)
             (Neural Networks Archs-codes/Demonstration guide of new packages are heartly welcome !)
-            
-    🥉 DataStructure and Coding Algorithms
     
     🥇 React UI Components , NodeJS Magic Snippets 
     
