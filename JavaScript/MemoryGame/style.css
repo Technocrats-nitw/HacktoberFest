@@ -1,0 +1,65 @@
+.row {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    cursor: pointer;
+}
+
+.card.done {
+    cursor: default;
+}
+
+.card.done:hover {
+    cursor: default;
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 0px 2px #dc3545;
+    box-sizing: border-box;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+.orange {
+    background: orange;
+}
+
+.cyan {
+    background: cyan;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.pink {
+    background: pink;
+}
+
+.teal {
+    background: teal;
+}
+
+.color-hidden {
+    background: #eee;
+}
+
+.winner {
+    text-align: center;
+}
