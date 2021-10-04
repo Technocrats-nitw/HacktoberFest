@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<audio src="sounds/equal.mp3" class="sound-equal"></audio>
+	<audio src="sounds/unequal.mp3" class="sound-unequal"></audio>
+	<audio src="sounds/winner.mp3" class="sound-winner"></audio>
+	<div class="container">
+		<div class="row">
+			<div data-color="pink" class="card pink" onclick="onCardClicked(event)"></div>
+			<div data-color="yellow" class="card yellow" onclick="onCardClicked(event)"></div>
+			<div data-color="orange" class="card orange" onclick="onCardClicked(event)"></div>
+			<div data-color="orange" class="card orange" onclick="onCardClicked(event)"></div>
+		</div>
+		<div class="row">
+			<div data-color="red" class="card red" onclick="onCardClicked(event)"></div>
+			<div data-color="teal" class="card teal" onclick="onCardClicked(event)"></div>
+			<div data-color="blue" class="card blue" onclick="onCardClicked(event)"></div>
+			<div data-color="green" class="card green" onclick="onCardClicked(event)"></div>
+		</div>
+		<div class="row">
+			<div data-color="teal" class="card teal" onclick="onCardClicked(event)"></div>
+			<div data-color="red" class="card red" onclick="onCardClicked(event)"></div>
+			<div data-color="blue" class="card blue" onclick="onCardClicked(event)"></div>
+			<div data-color="pink" class="card pink" onclick="onCardClicked(event)"></div>
+		</div>
+		<div class="row">
+			<div data-color="cyan" class="card cyan" onclick="onCardClicked(event)"></div>
+			<div data-color="yellow" class="card yellow" onclick="onCardClicked(event)"></div>
+			<div data-color="green" class="card green" onclick="onCardClicked(event)"></div>
+			<div data-color="cyan" class="card cyan" onclick="onCardClicked(event)"></div>
+		</div>
+		<div class="winner">
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
