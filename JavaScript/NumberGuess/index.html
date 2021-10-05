@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guess</title>
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<stye>
+    
+#final, #leftpane{
+	display: none;
+}
+
+#cheater{
+	display: none;
+}
+
+.basic{
+	margin:12% auto;
+	font-size: 50px;
+	text-align: center;
+	color:white;
+}
+
+.options{
+	text-align: center;
+}
+.option{
+	margin-bottom: 15px;
+}
+
+#process{
+	display: none;
+}
+
+.attempts{
+	font-size: 40px;
+	color: black;
+}
+
+.options{
+	margin-top:20px;
+}
+
+.Number{
+
+	margin:5px;
+}
+
+#num{
+	padding:2px;
+	font-family: Comic Sans MS, Arial;
+	font-size: 40px;
+	border: solid;
+	background-color: black;
+	margin-bottom: 5px;
+}
+
+.attempt{
+	text-shadow: 1px 1px 8px #fff;
+}
+    </style>
+</head>
+<body class="bg-dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+
+				<!-- Banner at Reloading -->
+				<div id="onload" class="basic">
+					<p>
+						Welcome To Number Guessing Game.<br>
+						Choose any Number Between 0 to 1000, in your mind<br>
+						And This program will try to predict the number within 10 steps.
+						<br>
+						Click anywhere to begin... 
+					</p>
+				</div>
+
+				<!-- When user wins -->
+				<div class="container" id="final">
+					<div class="basic">
+						<p>
+							Woohooo!!!!<br>
+							We got you!!!
+							<br>
+							Click anywhere to begin again... 
+						</p>
+					</div>
+				</div>
+
+				<!-- When user cheats -->
+				<div class="container" id="cheater">
+					<div class="basic">
+						<p>
+							You can't Live With Your Own Failure<br>
+							You're a LIAR<br>
+							Refresh Again or Click On Here to Begin Again
+						</p>
+					</div>
+				</div>
+
+				<!-- Main game play -->
+				<div class="container" id="process">
+
+					<div class="options basic">
+						<div class="Number">
+							<h2><i>Is this your Number?</i></h2>
+							<span id="num" class="text-warning"></span>
+						</div>
+						<div class="option">
+							<button class="btn btn-success" id="big"><h1>My Number is Bigger than this number</h1></button>
+						</div>
+						<div class="option">
+							<button class="btn btn-success" id="right"><h1>This is my Number</h1></button>
+						</div>
+						<div class="option">
+							<button class="btn btn-success" id="small"><h1>My Number is smaller than this number</h1></button>
+						</div>
+						<div class="attempts">
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+							<span class="attempt">•</span>
+						</div>
+						<div class="row">
+							<div class="col-sm-3" style="text-align: right;">
+								<h5>Closeness : <h5>
+							</div>
+							<div class="col-sm-9" style="padding-top: 6px">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="progress">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer font-small blue pt-4 text-light">
+	  	<!-- Footer Links -->
+	  	<div class="container-fluid text-center text-md-left">
+	    	<!-- Grid row -->
+	   		<div class="row">
+	      		<!-- Grid column -->
+	      		<div class="col-md-6 mt-md-0 mt-3">
+	       			 <!-- Content -->
+	        		<h5 class="text-uppercase">GAME DEVELOPED BY NOZARIYO</h5>
+	        		<p>Hereby Permission is given to change and modify code.</p>
+	      		</div>
+	      		<!-- Grid column -->
+			    <hr class="clearfix w-100 d-md-none pb-3">
+				<!-- Grid column -->
+	      		<div class="col-md-3 mb-md-0 mb-3">
+	        	<!-- Links -->
+	        		<h5 class="text-uppercase">Other Github Repositories</h5>
+	        		<ul class="list-unstyled">
+		          		<li>
+		            		<a href="https://github.com/">Project 1</a>
+		          		</li>
+		          		<li>
+		            		<a href="https://github.com/">Project 2</a>
+		          		</li>
+		          		<li>
+		            		<a href="https://github.com/">Project 3</a>
+		          		</li>
+	        		</ul>
+	   	   		</div>
+	      		<!-- Grid column -->
+
+	      		<!-- Grid column -->
+	      		<div class="col-md-3 mb-md-0 mb-3">
+
+	        		<!-- Links -->
+	        		<h5 class="text-uppercase">SOCIAL MEDIA</h5>
+				        <ul class="list-unstyled">
+				        	<li>
+					            <a href="https://www.linkedin.com/in/">Linkedin</a>
+					        </li>
+					        <li>
+					            <a href="https://www.facebook.com/">Facebook</a>
+					        </li>
+					        <li>
+					            <a href="https://www.instagram.com/">Instagram</a>
+					        </li>
+					        
+			        	</ul>
+	      		</div>
+	      	<!-- Grid column -->
+	   		</div>
+	    <!-- Grid row -->
+	  	</div>
+	  	<!-- Footer Links -->
+	  	<!-- Copyright -->
+	  	<div class="footer-copyright text-center py-3">© 2020 Copyright:
+	    <a href="https://github.com/suffisme"> Nozariyo</a>
+	  </div>
+	  <!-- Copyright -->
+
+	</footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
