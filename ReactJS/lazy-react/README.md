@@ -3,7 +3,7 @@
 This app is a small example that shows how to use `React.lazy` (compatible with dynamic import of javascript) to achieve ***Lazy Rendering*** which can improve performance and build a better experience for users
 
 ## Lazy Rendering
-- Lazy rendering is just importing the components into the App.ts (App.js) in a lazy manner i.e. importing on demand.
+- Lazy rendering is just importing the components in a lazy manner i.e. importing on demand.
 - This may not may not make sense when used in a small react app as the one used in this example, but when the app grows, making unnecessary imports may slow down the app.
 - This is definitely a performance overhead since we are delaying the rendering just because we need some imports to be done.
 - It leads to a **bad User Experience** of the app.
