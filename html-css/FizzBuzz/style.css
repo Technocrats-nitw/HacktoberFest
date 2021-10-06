@@ -1,0 +1,56 @@
+body{
+  height: 100vh;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  margin-top:auto;
+  display: flex;
+  justify-content: center;
+}
+.numbers,.number{
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.numbers > div{
+  height: 24px;
+  width: 24px;
+  background-color: red;
+  border-radius:12px;
+  margin : 1.5% 0.5%;
+}
+.number > div{
+  height: 100px;
+  width: 100px;
+  border:solid 2px black ;
+  border-radius: 50px;
+  background-color: rgb(250, 2, 2);
+  margin : 1%;
+}
+
+#num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 130%;
+  color : #f1f1f1;
+}
+.numbers > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 130%;
+}
+
+.center {
+  transform : scale(2);
+  margin : 1.5% 1%;
+  justify-content: center;
+  display: flex;
+  color : #000;
+  font-weight: bolder;
+}
