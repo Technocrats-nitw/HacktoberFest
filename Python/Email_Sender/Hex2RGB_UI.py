@@ -1,3 +1,17 @@
+'''
+	GUI Program to Convert Hexadecimal code to RGB format
+	Accepted inputs
+	6 length
+		• # _ _ _ _ _ _
+		• _ _ _ _ _ _
+	3 length
+		• # _ _ _
+		• _ _ _
+	For example: #ff22ee = ff22ee = #f2e = f2e
+		
+	
+'''
+
 import tkinter as tk
 import tkinter.font as font
 
