@@ -8,14 +8,12 @@
 		• # _ _ _
 		• _ _ _
 	For example: #ff22ee = ff22ee = #f2e = f2e
-		
-	
 '''
 
 import tkinter as tk
 import tkinter.font as font
 
-# color dictionary
+# color dictionary and main executable function
 def rgb():
 	h = {
 	'0':0,
@@ -56,7 +54,6 @@ def rgb():
 	lbl_ans.grid(row=3,column=0,sticky='we')
 
 # intitialising tkinter
-
 window = tk.Tk()
 window.title('Hex2RGB')
 
