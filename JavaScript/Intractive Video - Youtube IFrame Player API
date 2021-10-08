@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intractive Video - Youtube IFrame Player API</title>
+</head>
+<style>
+    .VideoWrapper {
+        max-width: 800px;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    .youtube-iframe-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .youtube-iframe-container .iframeYT {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlayContainer {
+        background: #0000004d;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+
+    .overlayContainer.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .bodyContainerOverlay {
+        position: absolute;
+        bottom: 0;
+        margin: 10px;
+        margin-bottom: -8px;
+        opacity: 0;
+        text-align: center;
+        width: 100%;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+
+    .bodyContainerOverlay.active {
+        margin-bottom: 24px;
+        opacity: 1;
+    }
+
+    .btnYT {
+        display: inline-block;
+        padding: 10px 34px;
+        background: #fff;
+        border-radius: 2px;
+        cursor: pointer;
+        margin: 8px;
+        transition: all .8s ease;
+        -webkit-transition: all .8s ease;
+        -moz-transition: all .8s ease;
+        -o-transition: all .8s ease;
+    }
+
+
+    .videoQuesBox.submit .btnYT.active {
+        background: #FF9800;
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+        width: auto;
+    }
+
+
+    .videoQuesBox.submit .btnYT {
+        opacity: 0;
+        width: 0%;
+        visibility: hidden;
+        display: none;
+    }
+</style>
+
+<body>
+
+    <div class="VideoWrapper">
+        <div class="youtube-iframe-container">
+
+            <div id="videoOverlay" class="iframeYT overlayContainer">
+                <div id="videoOverlayBody">
+                    <div class='bodyContainerOverlay'>
+
+                        <!-- <div id="Q01" class="videoQuesBox">
+              <div class="btnYT" onclick="submitQues(this)">Tikamgarh</div>
+              <div class="btnYT" onclick="submitQues(this)">Sitamgarh</div>
+            </div> -->
+                    </div>
+                </div>
+
+            </div>
+            <div id='player_div' class="iframeYT"></div>
+            <!--<iframe id="iframeYT" class="iframeYT" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope;" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/ufCRMewoK1M?rel=0&controls=0&modestbranding=1&showinfo=0"></iframe>-->
+
+        </div>
+    </div>
+
+    <button onclick="showOverlayWin()" style="display:none;">Show Ques</button>
+    <script>
+        var Qactive = 'none';
+        var Qsubmit = 'none';
+        var Qlists = [];
+        var nextQ = 0; // Q count start from 
+
+        //set Questions
+        var ytVideoID = 'RF8dhlSPBJs';
+        var startPlay = 284; // in sec
+        var endPlay = 380; // in sec
+
+        Qlists[0] = {
+            'body': '<div id="Q01" class="videoQuesBox"><div class="btnYT" onclick="submitQues(this)">Lovely</div>          <div class="btnYT" onclick="submitQues(this)" >Bareilly Ki Barfi</div> </div>',
+            'sSec': 287,
+            'eSec': 293,
+            'iaSec': 297
+        }
+
+        Qlists[1] = {
+            'body': '<div id="Q01" class="videoQuesBox"><div class="btnYT" onclick="submitQues(this)">Tikamgarh</div>          <div class="btnYT" onclick="submitQues(this)" >Sitamgarh</div> </div>',
+            'sSec': 309,
+            'eSec': 314,
+            'iaSec': 330
+        }
+
+
+        Qlists[2] = {
+            'body': '<div id="Q01" class="videoQuesBox"><div class="btnYT" onclick="submitQues(this)">24 News</div>          <div class="btnYT" onclick="submitQues(this)" >Tezz News</div> </div>',
+            'sSec': 362,
+            'eSec': 368,
+            'iaSec': 373
+        }
+
+
+
+        function toggleOverlayWin() {
+            var elmOverlay = document.getElementById('videoOverlay');
+            var elmOverlayBodyC1 = document.querySelectorAll('.bodyContainerOverlay')[0];
+
+            if (elmOverlay.classList.contains("active")) {
+                elmOverlay.classList.remove("active");
+                elmOverlayBodyC1.classList.remove("active");
+                Qactive = 'true';
+            } else {
+                elmOverlay.classList.add("active");
+                elmOverlayBodyC1.classList.add("active");
+                Qactive = 'none';
+            }
+
+        }
+
+        function submitQues(optSelect) {
+            optSelect.parentNode.classList.add("submit");
+            optSelect.classList.add("active");
+            Qsubmit = 'Done';
+        }
+
+        //https://youtu.be/RF8dhlSPBJs?t=284
+
+
+        var player;
+
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player_div',
+                {
+                    videoId: ytVideoID,   // Load the initial video 
+
+                    playerVars: {
+                        autoplay: 1,      // Don't autoplay the initial video
+                        rel: 0,           //  Don’t show related videos
+                        theme: "light",   // Use a light player instead of a dark one
+                        controls: 0,      // Show player controls
+                        showinfo: 0,      // Don’t show title or loader
+                        modestbranding: 1 // No You Tube logo on control bar
+
+                    },
+                    events: {
+                        onReady: onReady,
+                        onStateChange: onStateChange,
+                        onError: onError
+                    }
+                });
+
+        }
+
+
+        function onReady(event) {
+            //playQueueList(); 
+            // make the interface visible since we're now ready to go
+            player.loadVideoById({
+                'videoId': ytVideoID,
+                'startSeconds': startPlay,
+                'endSeconds': endPlay
+            });
+            player.playVideo();
+            console.log("player ready");
+        }
+
+
+        // Log state changes
+        function onStateChange(event) {
+            var state = "undefiend";
+            clearInterval(checkInt);
+            playState = 'none';
+            switch (event.data) {
+                case YT.PlayerState.UNSTARTED:
+                    state = "unstarted";
+                    break;
+                case YT.PlayerState.ENDED:
+                    state = "ended";
+                    break;
+                case YT.PlayerState.PLAYING:
+                    state = "playing";
+                    startInterval();
+                    break;
+                case YT.PlayerState.PAUSED:
+                    state = "paused";
+                    break;
+                case YT.PlayerState.BUFFERING:
+                    state = "buffering";
+                    break;
+                case YT.PlayerState.CUED:
+                    state = "video cued";
+                    break;
+                default:
+                    state = "unknown (" + event.data + ")";
+            }
+
+            console.log('onStateChange: ' + state);
+        }
+
+        // Log any errors
+        function onError(event) {
+            var error = "undefined";
+            switch (event.data) {
+                case 2:
+                    error = "Invalid parameter value";
+                    break;
+                case 5:
+                    error = "HTML 5 related error";
+                    break;
+                case 100:
+                    error = "Video requested is not found";
+                    break;
+                case 101:
+                    error = "Embedded playback forbidden by ownder";
+                    break;
+                case 150:
+                    error = "Error processing video request";
+                    break;
+                default:
+                    error = "unknown (" + event.data + ")";
+            }
+            console.log("onError: " + error);
+            alert("Error: " + error);
+        }
+
+
+
+
+        var checkInt;
+
+        function startInterval() {
+            //checks every 100ms to see if the video has reached 6s
+            checkInt = setInterval(function () {
+
+                if (player.getCurrentTime() > Qlists[nextQ].sSec
+                ) {
+                    if (Qactive !== 'true') {
+                        toggleOverlayWin('show');
+                    }
+                    if (player.getCurrentTime() > Qlists[nextQ].iaSec
+                        && Qsubmit == 'Done') {
+                        toggleOverlayWin('hide');
+                    }
+                    if (player.getCurrentTime() > Qlists[nextQ].eSec
+                        && Qsubmit != 'Done') {
+                        toggleOverlayWin('hide');
+                    }
+                };
+            }, 100)
+
+        }
+
+
+
+        function toggleOverlayWin(type) {
+            var elmOverlay = document.getElementById('videoOverlay');
+            var elmOverlayBodyC1 = document.querySelectorAll('.bodyContainerOverlay')[0];
+
+            if (Qactive == 'true') {
+                if (type == 'hide') {
+                    elmOverlay.classList.remove("active");
+                    elmOverlayBodyC1.classList.remove("active");
+                    Qactive = 'none';
+                    nextQ = nextQ + 1;
+                    Qsubmit = 'none';
+
+                }
+            }
+
+            if (Qactive !== 'true') {
+                if (type == 'show') {
+                    document.querySelectorAll('.bodyContainerOverlay')[0].innerHTML = Qlists[nextQ].body;
+                    elmOverlay.classList.add("active");
+                    elmOverlayBodyC1.classList.add("active");
+                    Qactive = 'true';
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>
