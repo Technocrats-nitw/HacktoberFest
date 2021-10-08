@@ -38,7 +38,7 @@ def timeElapsed(stime, etime):
     return time
 
 if __name__ == '__main__':
-    prompt = "Hi, my name is Aman."
+    prompt = input()
     print("Type this:- '", prompt, "'")
 
     input("press ENTER when you are ready!")
