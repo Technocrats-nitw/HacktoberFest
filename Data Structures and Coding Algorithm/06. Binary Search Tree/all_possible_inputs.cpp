@@ -131,7 +131,7 @@ int main() {
   insert(tree, reader);//this makes the tree
 
   vector <vector<int>> finalanswer = findsubseq(tree);
-  //printing of tree
+  //printing of all possible inputs
   for (auto sequences: finalanswer) {
     for (auto elements: sequences)
       cout << elements << " ";
