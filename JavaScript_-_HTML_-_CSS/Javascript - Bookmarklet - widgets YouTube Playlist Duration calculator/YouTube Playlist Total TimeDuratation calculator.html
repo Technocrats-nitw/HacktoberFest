@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intractive Video - Youtube IFrame Player API</title>
+</head>
+<style>
+  pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+</style>
+
+<body>
+
+    <pre style="width:100%;">
+
+        <h1>YouTube Playlist Total Time/Duratation calculator</h1>
+        
+        Works on 
+        
+        1. Desktop / laptop / youtube.com
+           a. <a href="https://www.youtube.com/channel/UCapQ8VzljfmUW5OM-ynsyCQ/videos" target="_blank">YouTube Videos Page</a>
+           b. <a href="https://www.youtube.com/playlist?list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa" target="_blank">YouTube Playlist Page</a>
+           c. <a href="https://www.youtube.com/watch?v=MlBXz9gv08E&list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa&index=1" target="_blank">Playlist Watch Page</a>
+        
+        1. Mobile / m.youtube.com
+           a. <a href="https://m.youtube.com/channel/UCapQ8VzljfmUW5OM-ynsyCQ/videos" target="_blank">YouTube Videos Page</a>
+           b. <a href="https://m.youtube.com/playlist?list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa" target="_blank">YouTube Playlist Page</a>
+           c. <a href="https://m.youtube.com/watch?v=MlBXz9gv08E&list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa&index=1" target="_blank">Playlist Watch Page</a>
+        
+        <h2> How to Use :</h2>
+        1. <button onclick="copyToClipboard()" >Copy Script</button></br>
+        2. open youtube on your browser ( Videos | Playlist | Playlist Watch Page )</br>
+        3. in the address bar of the browser type "javascript: " and then paste ScriptCode</br>
+        <pre>
+        
+        <textarea style="width:100%; height:250px;">
+        
+        // remove all comments lines 
+        
+        var countUdTime = 0;
+        var ytt = "desktop";
+        
+        // for Desktop / laptop / youtube.com
+        // ===================================
+        
+        // on YouTube Videos Page - https://www.youtube.com/channel/UCapQ8VzljfmUW5OM-ynsyCQ/videos
+        var ytp = document.querySelectorAll("ytd-grid-video-renderer");
+        
+        if (ytp.length < 1) {
+            // on Playlist Page - https://www.youtube.com/playlist?list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa
+            ytp = document.querySelectorAll("ytd-playlist-video-list-renderer > #contents > ytd-playlist-video-renderer");
+        }
+        if (ytp.length < 1) {
+            // on Playlist Watch Page - https://www.youtube.com/watch?v=MlBXz9gv08E&list=PLv7XeeXKl8EKbJ-McS0ZUi1iP9ja12yaa&index=1
+            ytp = document.querySelectorAll("ytd-playlist-panel-video-renderer");
+        }
+        
+        // for Mobile / m.youtube.com
+        // ==========================
+        
+        if (ytp.length < 1) {
+            ytt = "mobile";
+          
+            // on YouTube Videos Page - https://m.youtube.com/c/UCapQ8VzljfmUW5OM-ynsyCQ/videos/
+            ytp = document.querySelectorAll("ytm-compact-video-renderer");    
+        
+            if (ytp.length < 1) {
+                // on Playlist Page 
+                ytp = document.querySelectorAll("ytm-playlist-video-list-renderer > ytm-playlist-video-renderer");
+            }
+            if (ytp.length < 1) {
+                // on Playlist Watch Page
+                ytp = document.querySelectorAll("ytm-playlist-panel-video-renderer");
+            }
+        }
+        
+        var time = 0;
+        for (var i = 0; i < ytp.length; i++) {
+            try {
+                if( ytt == "mobile"){
+                  var a = ytp[i].getElementsByTagName("ytm-thumbnail-overlay-time-status-renderer")[0].innerText;
+                }else{
+                  var a = ytp[i].getElementsByTagName("ytd-thumbnail-overlay-time-status-renderer")[0].innerText;
+                }
+                
+                var tx = a.split(":");
+                if (tx.length < 3) {
+                    time = time + Number(tx[0]) * 60 + Number(tx[1]);
+                } else if ((tx.length = 3)) {
+                    time = time + Number(tx[0]) * 60 * 60 + Number(tx[1]) * 60 + Number(tx[2]);
+                }
+            } catch (e) {
+                countUdTime = countUdTime + 1;
+            }
+        }
+        var ytpT = convertS(time);
+        var show = "YouTube Playlist \n --------------- \n Total Videos : " + ytp.length + "\n Total Duration : " + ytpT + "\n Avg. Duration  : " + convertS(time / ytp.length);
+        
+        alert(show);
+        alert("Error to Get Time : " + countUdTime + " videos");
+        function convertS(sec) {
+            var hrs = Math.floor(sec / 3600);
+            var min = Math.floor((sec - hrs * 3600) / 60);
+            var seconds = sec - hrs * 3600 - min * 60;
+            seconds = Math.round(seconds * 100) / 100;
+            var result = (hrs < 10 ? "0" + hrs : hrs) + " Hours ";
+            result += (min < 10 ? "0" + min : min) + " Min ";
+            result += (seconds < 10 ? "0" + seconds : seconds) + " Sec ";
+            return result;
+        }
+        
+        
+        
+        
+        </textarea>
+        
+        
+        <script>
+          
+         var JSCode02 = `javascript: var countUdTime = 0; var ytt = "desktop"; var ytp = document.querySelectorAll("ytd-grid-video-renderer"); if (ytp.length < 1) { ytp = document.querySelectorAll("ytd-playlist-video-list-renderer > #contents > ytd-playlist-video-renderer"); } if (ytp.length < 1) { ytp = document.querySelectorAll("ytd-playlist-panel-video-renderer"); } if (ytp.length < 1) { ytt = "mobile"; ytp = document.querySelectorAll("ytm-compact-video-renderer"); if (ytp.length < 1) { ytp = document.querySelectorAll("ytm-playlist-video-list-renderer > ytm-playlist-video-renderer"); } if (ytp.length < 1) { ytp = document.querySelectorAll("ytm-playlist-panel-video-renderer"); } } var time = 0; for (var i = 0; i < ytp.length; i++) { try { if( ytt == "mobile"){ var a = ytp[i].getElementsByTagName("ytm-thumbnail-overlay-time-status-renderer")[0].innerText; }else{ var a = ytp[i].getElementsByTagName("ytd-thumbnail-overlay-time-status-renderer")[0].innerText; } var tx = a.split(":"); if (tx.length < 3) { time = time + Number(tx[0]) * 60 + Number(tx[1]); } else if ((tx.length = 3)) { time = time + Number(tx[0]) * 60 * 60 + Number(tx[1]) * 60 + Number(tx[2]); } } catch (e) { countUdTime = countUdTime + 1; } } var ytpT = convertS(time); var show = "YouTube Playlist \n --------------- \n Total Videos : " + ytp.length + "\n Total Duration : " + ytpT + "\n Avg. Duration  : " + convertS(time / ytp.length); alert(show); alert("Error to Get Time : " + countUdTime + " videos"); function convertS(sec) { var hrs = Math.floor(sec / 3600); var min = Math.floor((sec - hrs * 3600) / 60); var seconds = sec - hrs * 3600 - min * 60; seconds = Math.round(seconds * 100) / 100; var result = (hrs < 10 ? "0" + hrs : hrs) + " Hours "; result += (min < 10 ? "0" + min : min) + " Min "; result += (seconds < 10 ? "0" + seconds : seconds) + " Sec "; return result; }`;
+        
+         function copyToClipboard()
+         {
+          var dummy = document.createElement("textarea");  
+          document.body.appendChild(dummy); 
+          dummy.value = JSCode02;
+          dummy.select();
+          document.execCommand("copy");
+          document.body.removeChild(dummy);
+          alert("Code has been copied.")
+         }
+        
+
+        
+        </script>
+
+   
+</body>
+
+</html>
