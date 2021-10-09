@@ -131,6 +131,10 @@ You can choose directory of your preferred tech stack ( `DSA Depreciated` ) and 
         </td>
     </tr>
 </table>
+
+<div align="center">
+    <img src="https://s3.amazonaws.com/hr-assets/0/1633781289-f8f6feea48-TeamTechnocrats.jpg">
+</div>
 <hr>
 
 ## Contributors
