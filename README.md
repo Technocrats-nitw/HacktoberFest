@@ -107,7 +107,7 @@ You can choose directory of your preferred tech stack ( `DSA Depreciated` ) and 
 
 # About us
 
-`Team Technocrats` is a team of 6 tech enthusiasts from NITW with varying technical interests ! They Learn from each other and sit for Hacks on weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not just limited to Hackathons xD . We have nerdiest researchers over here too :D
+`Team Technocrats` is a group of `six tech enthusiasts from NITW` with varying technical interests ! They Learn from each other and sit for Hacks on weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not just limited to Hackathons xD . We have nerdiest researchers over here too :D
 
 <table>
     <tr>
