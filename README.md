@@ -109,19 +109,28 @@ You can choose directory of your preferred tech stack ( `DSA Depreciated` ) and 
 
 `Team Technocrats` is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not just limited to Hackathons xD . We have nerdiest researchers over here too :D
 
-   [Anshuman Mishra](https://github.com/shivanshuman021) : yeyyy it's me
-       
-   [Sufiyan Ansari](https://github.com/suffisme)
-       
-   [Ashiqa Rahaman](https://github.com/ashiqa)
-       
-   [Chaitanya Hardikar](https://github.com/chaitanyahardikar)
-       
-   [Shaik Abdullah](https://github.com/Shaik2003)
-       
-   [Aaditya prakash kattekola](https://github.com/Kapi2910)
-
-
+<table>
+    <tr>
+        <td>
+            <a href="https://github.com/shivanshuman021">Anshuman Mishra</a>
+        </td>
+        <td>
+            <a href="https://github.com/ashiqa">Ashiqa Rahaman</a>
+        </td>
+        <td>
+            <a href="https://github.com/Kapi2910">Aaditya Prakash Kattekola</a>
+        </td>
+        <td>
+            <a href="https://github.com/chaitanyahardikar">Chaitanya Hardikar</a>
+        </td>
+        <td>
+            <a href="https://github.com/Shaik2003">Shaik Abdullah</a>
+        </td>
+        <td>
+            <a href="https://github.com/suffisme">Sufiyan Ansari</a>
+        </td>
+    </tr>
+</table>
 <hr>
 
 ## Contributors
