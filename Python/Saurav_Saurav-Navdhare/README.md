@@ -1,6 +1,5 @@
-# TicTacToe
-Tic Tac Toe console game in Python
-
-This is a basic file of the famous game TIC TAC TOE
-
-[![CodeFactor](https://www.codefactor.io/repository/github/saurav-navdhare/tictactoe/badge)](https://www.codefactor.io/repository/github/saurav-navdhare/tictactoe)
+In this folder you will find 4 projects:
+i) Basic Bank Management System :- Runs in terminal
+ii) Snake Game
+iii) Weather App with GUI :- Add Open weather api and use : check requirement folder for required modules
+iv) Tic Tac Toe game: Runs in console
