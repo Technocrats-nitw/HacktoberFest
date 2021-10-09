@@ -101,35 +101,13 @@ If you get this message __'This branch is ___ commits behind shivanshuman021:mai
 git pull origin branch-name
 ```
 
-# Add sub-folders of your name and put files into respective sub-folders
-#### Example - >
-```
-project
-│   README.md
-│   hacktoberfest.png
-│
-└───flutter
-│   └───subfolder1(FolderTopic+Yourname+username)
-│       │   file001.dart
-│       │   file002.dart
-│       │   ...
-│   
-└───Python
-│   └───subfolder1(FolderTopic+Yourname+username)
-│       │   file001.py
-│       │   file002.py
-│       │   ...
-|
-.
-.
-.
- 
-```
+### Contributing :  
 
+You can choose directory of your preferred tech stack ( `DSA Depreciated` ) and follow the contributing rules - make folder / proper file name and proper extension.
 
 # About us
 
-`Team Technocrats` is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not limited to Hackathons xD . We have nerdiest researchers over here too :D
+`Team Technocrats` is a team of 6 tech enthusiast students with varying technical interests ! They Learn from each other and sit for Hacks at the weekends. What's more ? They were in Top 10 (India wide) in Hackon with Amazon Hackathon ! but what they do is not just limited to Hackathons xD . We have nerdiest researchers over here too :D
 
    [Anshuman Mishra](https://github.com/shivanshuman021) : yeyyy it's me
        
