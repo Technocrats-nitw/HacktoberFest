@@ -135,7 +135,8 @@ Read [CONTRIBUTING.md](./CONTRIBUTING.md) for more about contributing using GITH
 </table>
 
 <div align="center">
-    <img src="https://s3.amazonaws.com/hr-assets/0/1633781289-f8f6feea48-TeamTechnocrats.jpg">
+    <img src="https://s3.amazonaws.com/hr-assets/0/1633866624-b4daea3cdb-The-Technocrats.jpg">
+<!--     <img src="https://s3.amazonaws.com/hr-assets/0/1633781289-f8f6feea48-TeamTechnocrats.jpg"> -->
 </div>
 <hr>
 
