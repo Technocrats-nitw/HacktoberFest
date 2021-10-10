@@ -1,10 +1,10 @@
-from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
+from selenium import webdriver #import selenium web driver
+from selenium.webdriver.common.action_chains import ActionChains #actions chains are used to perform actions by the driver
 from selenium.webdriver.common.keys import Keys
 import time
 import random
 
-date,month,year = input('Enter date (DD/MM/YYYY) : ').split('/')
+date,month,year = input('Enter date (DD/MM/YYYY) : ').split('/')    #first we take the date of travel from the use
 print(date,month,year)
 
 oneway = False if input('Do you want a Return flight too? (Y/N): ').lower() == 'y' else True
@@ -12,10 +12,11 @@ oneway = False if input('Do you want a Return flight too? (Y/N): ').lower() == '
 if not oneway:
     date_r,month_r,year_r = input('Enter return date (DD/MM/YYYY) : ').split('/')
 
-driver=webdriver.Firefox(executable_path="C://selenium/geckodriver.exe")
+driver=webdriver.Firefox(executable_path="C://selenium/geckodriver.exe") #attaching geckodriver to automate through firefox
 driver.get('https://www.expedia.co.in/Flights')
 time.sleep(5)
 
+#this element here returns the field of "FROM" city in the travel website
 element = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div/div[1]/div/div[1]/div[1]/div/div/div/form/div[2]/div[1]/div[1]/div[2]/div[1]/div/div[1]/div/div/div/div/div[1]/button')
 action = ActionChains(driver).click(on_element = element).perform()
 time.sleep(2)
@@ -25,7 +26,7 @@ element.send_keys(Keys.RETURN)
 
 
 time.sleep(1)
-
+#this element here returns the field of "TO" city in the travel website
 element = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div/div[1]/div/div[1]/div[1]/div/div/div/form/div[2]/div[1]/div[1]/div[2]/div[1]/div/div[2]/div/div/div/div/div[1]/button')
 action = ActionChains(driver).click(on_element = element).perform()
 time.sleep(2)
@@ -68,12 +69,14 @@ short_month = {
 
 required_month = months[month]+' '+year
 
+#in the website it is required to change the date in these formats only.
+
 if not oneway:
     required_month_return = months[month_r]+' '+year_r
 
 time.sleep(2)
 
-if oneway:
+if oneway: #this is for oneway booking
 
     element = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div/div[1]/div/div[1]/div[1]/div/div/div/form/div[2]/ul/div[1]/li[2]/a')
     action = ActionChains(driver).click(on_element = element).perform() #this is for oneway
@@ -100,7 +103,7 @@ if oneway:
     element = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div/div[1]/div/div[1]/div[1]/div/div/div/form/div[2]/div[1]/div[2]/div[2]/div[2]/div/div/div/div/div[2]/div/div[3]/button')
     action = ActionChains(driver).click(on_element = element).perform()  #this is to click date
 
-else:
+else: #this is for 2 way bookinh
 
     element = driver.find_element_by_xpath('//*[@id="d1-btn"]')
     element.click() #for start date
