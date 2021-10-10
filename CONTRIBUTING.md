@@ -15,8 +15,9 @@ Pull requests are the best way to propose changes to the codebase. We actively w
   Also, make sure to make account on HacktoberFest💚 before start contributing.
 
 2. Now in your local repository (forked one) add the required changes.
-3. Then follow steps to raise a Pull Request.
-4. If you are working from master branch make sure to raise PR only after fetching upstream
+3. Make sure to read the contributing rules of every tech stack. For example "Read README.md" of Python folder if you want to contribute in Python language.
+4. Then follow steps to raise a Pull Request.
+5. If you are working from master branch make sure to raise PR only after fetching upstream
     <img src="https://s3.amazonaws.com/hr-assets/0/1633101658-9b2cac921e-fetch.jpg">
 5. Now just raise the pull request
   <div align="center"><img align="center" src="https://s3.amazonaws.com/hr-assets/0/1633101763-4800b8d964-PR.jpg"></div>
