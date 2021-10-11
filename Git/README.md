@@ -12,4 +12,5 @@ This directory can contain documentations, tricks for GIT and GITHUB
 "After Adding your markdown file, edit this markdown below with proper link and name"
 
 ## Files Added so far
-- [FileName](url) - `<Author Name>`
+- [Basic Git Commands](./git_commands.md) - `Aastha Singh`
+- [Commands For Beginners](./terminal_beginners.md) - `Aastha Singh`
