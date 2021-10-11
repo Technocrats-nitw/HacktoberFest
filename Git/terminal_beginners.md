@@ -1,4 +1,4 @@
-## Basic GIT COMMANDS
+## Basic Terminal COMMANDS
 `Author- Aastha Singh`
 
 ### File Commands
