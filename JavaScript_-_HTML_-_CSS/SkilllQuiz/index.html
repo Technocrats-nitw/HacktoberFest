@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <video
+      style="
+        position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      "
+      preload="true"
+      autoplay
+      loop
+      muted
+    >
+      <source id="vid" src="Network.webm" type="video/webm" />
+    </video>
+    <div id="start-page" class="box">
+      <h2>Test your skills.</h2>
+      <button id="start-page-btn" class="btn">Get Started</button>
+    </div>
+    <div id="rules" class="box">
+      <div class="head">Rules</div>
+      <ul>
+        <li>Total time <span>1 min</span></li>
+        <li>Attempt all the questions</li>
+        <li>Multiple choices are provided, only one is correct</li>
+        <li>There are two quizes, choose one.</li>
+      </ul>
+      <div class="bottom">
+        <button id="rules-btn" class="btn">Click Here</button>
+      </div>
+    </div>
+    <div id="quiz-choice-page" class="box">
+      <h2>Choose any one</h2>
+      <div class="buttons">
+        <button id="html" class="btn">HTML</button>
+        <button id="css" class="btn">CSS</button>
+      </div>
+    </div>
+    <div id="containerBox" class="container box">
+      <header>
+        <div id="name" class="name">quiz</div>
+        <div id="timer">60</div>
+      </header>
+      <div id="section">
+        <div id="problem"></div>
+        <div id="choice1" class="choice"></div>
+        <div id="choice2" class="choice"></div>
+        <div id="choice3" class="choice"></div>
+        <div id="choice4" class="choice"></div>
+      </div>
+      <div id="score">
+        <div id="points"></div>
+        <p id="para"></p>
+        <button id="ans" class="btn">Answers</button>
+      </div>
+
+      <footer>
+        <button id="submit" class="btn btn-sub">Submit</button>
+        <div>
+          <!-- <button class="btn" onclick="prev()">Previous</button> -->
+          <button class="btn" id="nxt" onclick="next()">Next</button>
+          <button class="btn" id="nxt_ans">Next</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
