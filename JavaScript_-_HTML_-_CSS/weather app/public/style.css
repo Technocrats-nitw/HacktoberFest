@@ -1,5 +1,9 @@
 :root {
-  --bg_main: #0a1f44;
+  background-image: url("http://www.nasa.gov/sites/default/files/thumbnails/image/smap-weather.jpg");
+  /* opacity: ; */
+  background-size: cover ;
+  background-repeat: no-repeat;
+  
   --text_light: #fff;
   --text_med: #53627c;
   --text_dark: #1e2432;
@@ -48,7 +52,7 @@ ul {
 
 body {
   font: 1rem/1.3 "Roboto", sans-serif;
-  background: var(--bg_main);
+  /* background: var(--bg_main); */
   color: var(--text_dark);
   padding: 70px;
 }
@@ -139,7 +143,7 @@ body {
   position: relative;
   padding: 40px 10%;
   border-radius: 20px;
-  background: var(--text_light);
+  /* background: var(--text_light); */
   color: var(--text_med);
 }
 
