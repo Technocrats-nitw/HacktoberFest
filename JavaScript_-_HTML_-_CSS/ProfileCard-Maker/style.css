@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: linear-gradient(
+    90deg,
+    rgba(19, 0, 36, 1) 17%,
+    rgba(66, 10, 37, 1) 50%,
+    rgba(20, 2, 9, 1) 84%
+  );
+  --bg-form: #fff;
+  --bg-card: radial-gradient(
+    circle,
+    rgba(238, 233, 53, 1) 0%,
+    rgba(186, 252, 89, 1) 100%
+  );
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  margin: 2rem;
+  padding: 2rem;
+}
+input,
+textarea,
+select {
+  padding: 0.4rem;
+  margin: 0.3rem;
+  width: 20rem;
+}
+#sub-btn {
+  padding: 0.5rem 2rem;
+  margin: 0.3rem;
+  font-weight: 600;
+}
+.card {
+  padding: 2rem;
+  margin: 2rem;
+}
+.card div,
+.form div {
+  margin: 0.5rem;
+}
+.card {
+  visibility: hidden;
+  min-height: 24rem;
+  width: 20rem;
+}
+.card-style {
+  visibility: visible;
+  background: var(--bg-card);
+  font-family: cursive;
+}
+.card div {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+}
