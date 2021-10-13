@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="d-flex">
+    <div class="form">
+      <form action="">
+        <div>
+          <input type="text" placeholder="Name" id="person" />
+        </div>
+        <div>
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div>
+          <select name="position" id="position">
+            <option value="student">Student</option>
+            <option value="professional">professional</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea
+            name="about"
+            id="about"
+            cols="30"
+            rows="10"
+            placeholder="write something about yourself"
+          ></textarea>
+        </div>
+        <div><button id="sub-btn">Submit</button></div>
+      </form>
+    </div>
+    <div id="card-visibility" class="card">
+      <div>Name : <span id="card-name"></span></div>
+      <div>Email : <span id="card-email"></span></div>
+      <div>I am a <span id="card-profession"></span></div>
+      <div><span id="card-about"></span></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
