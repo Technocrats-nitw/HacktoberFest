@@ -1,0 +1,31 @@
+#message {
+  width: 100% !important;
+}
+#invoice div {
+  width: 95%;
+  margin: auto !important;
+}
+#boxBorder {
+  width: fit-content;
+  height: fit-content;
+}
+input[type='text']::placeholder {
+  /* Firefox, Chrome, Opera */
+  text-align: center;
+}
+textarea::placeholder {
+  text-align: center;
+}
+#box {
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+  font-family: cursive;
+  max-width: 50rem;
+  height: fit-content;
+  /* border: 2px solid black; */
+}
+#message {
+  width: 50rem;
+  height: 20rem;
+}
