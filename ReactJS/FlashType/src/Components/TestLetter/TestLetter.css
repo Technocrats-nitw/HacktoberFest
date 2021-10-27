@@ -1,0 +1,14 @@
+.test-letter{
+    font-size: 20px;
+    line-height: 19px;
+    font-family: 'Mukta', sans-serif;
+}
+.test-letter-correct{
+    color:rgb(19, 97, 3);
+}
+.test-letter-incorrect{
+    color:rgb(231, 80, 80)
+}
+.test-letter-notattempted{
+    color: rgb(182, 145, 78);
+}
