@@ -1,0 +1,32 @@
+.nav-container{
+display: flex;
+height: 10vh;
+align-items: center;
+background-color: rgb(1, 1, 15);
+justify-content: space-between;
+margin:0
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.flash-logo{
+    height:8vh;
+    margin-left: 20px;
+}
+.flash-logo-text{
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px; 
+    margin:0 10px;
+    color:wheat
+
+}
+.nav-right{
+margin-right: 50px;
+}
+.code-link{
+    color:wheat;
+    font-size: 20px;
+    text-decoration: none;
+}

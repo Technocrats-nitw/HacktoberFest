@@ -1,0 +1,14 @@
+.test-container{
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+    background-color: rgba(36, 35, 35, 0.952);
+    min-height: 650px;
+    margin:72px;
+}
+.tryagain-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}

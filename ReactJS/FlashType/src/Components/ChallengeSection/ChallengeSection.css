@@ -1,0 +1,11 @@
+.challenge-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 90vw;
+    align-items: center;
+}
+.challenge-text{
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
