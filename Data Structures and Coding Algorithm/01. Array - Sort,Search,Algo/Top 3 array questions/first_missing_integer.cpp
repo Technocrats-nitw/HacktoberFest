@@ -25,3 +25,16 @@ int firstMissingPositive(vector<int> &A) {
 
 // TIME COMPLEXITY - O(n)
 // SPACE COMPLEXITY - O(1)
+
+int main(){
+    vector<int> v;
+    int n;
+    cin >> n;
+    for(int i=0;i<n;i++){
+        int a;
+        cin >> a;
+        v.push_back(a);
+    }
+    cout << firstMissingPositive(v);
+    return 0;
+}
