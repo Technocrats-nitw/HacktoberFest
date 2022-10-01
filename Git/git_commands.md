@@ -76,6 +76,13 @@ $ git status
 ```
 This command will command only output information, it won't modify commits or changes in your local repository.
 
+### Compare with previous commit
+```git diff``` command is used to basically display the difference between last committed code and current code.
+```
+$ git diff 
+```
+This command will command only output information, it won't modify commits or changes in your local repository.
+
 <hr>
 
 ### Saves the Uncommitted Changes Locally
