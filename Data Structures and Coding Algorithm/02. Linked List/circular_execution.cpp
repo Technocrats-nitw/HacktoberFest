@@ -70,8 +70,8 @@ void print_removal(clptr L, clptr T, int m)
             break;
     }
 }
-int main()
-{
+
+void driver(){
     clptr L = NULL, T = NULL;
     int n, x, i;
     cin >> n;
@@ -85,4 +85,9 @@ int main()
     cin >> m;
 
     print_removal(L, T, m); // function call to print executed ones
+}
+
+int main()
+{
+    driver();
 }
